@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# nuxt-template
-
-> My grand Nuxt.js project
+> My Portfolio Made with Nuxt.js
 
 ## Build Setup
 
