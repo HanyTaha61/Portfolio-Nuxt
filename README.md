@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # nuxt-template
 
 > My grand Nuxt.js project
@@ -20,3 +21,6 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+=======
+# Portfolio-Nuxt
+>>>>>>> 2055969aab1356ef0f6a7ab3216fde97e6dd4a0a
