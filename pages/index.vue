@@ -9,31 +9,7 @@ import home from '../components/home'
 export default {
   components:{home},
   methods:{
-    // increase navbar Opacity on scroll
-    //----------------------------------
-    navbar_opacity: function navbar_opacity(){
-      let nav_bar = document.getElementById('navbar')
-      window.addEventListener('scroll', function(){
-          if(window.pageYOffset > 250){
-              if(window.innerWidth < 991){
-                  nav_bar.style.backgroundColor = 'rgba(1,1,1, 0.9)'
-              }else{
-                  nav_bar.style.backgroundColor = 'rgba(var(--fourth-hexa),0.85)'
-              }
-          }
-          else{
-              if(window.innerWidth < 991){
-                  nav_bar.style.backgroundColor = 'rgba(1,1,1, 0.9)'
-              }else{
-                  nav_bar.style.backgroundColor = 'rgba(var(--secondary-hexa),0.5)'
-              }
-          }
-      })
-    }
-    // ----------------------------------------------  
-  },
-  created(){
-    this.navbar_opacity()
+
   },
   head(){
     return{

@@ -1,7 +1,7 @@
 <template>
   <div id="projects">
     <b-container class="main">
-      <div class="row">
+      <b-row class="row">
         <div class="col-md-12 project rounded" v-for="(project,index) in projects" :key="index">
           <h2 class="text-center my-3 mb-5 py-3 rounded text-light">
             <a :href= project.url>{{(index)+1}}. {{project.name}}</a>
@@ -15,7 +15,7 @@
             <img class="img-fluid" :src="require(`../assets/projects/${project.src}`)" :alt= project.name> 
           </a>
         </div>
-      </div>
+      </b-row>
     </b-container>
   </div>
 </template>
@@ -25,6 +25,12 @@ export default {
   data(){
       return{
           projects:[
+            {
+              name: 'My Portfolio',
+              src: "portfolio.png",
+              url: '/',
+              technology: ['Nuxt.js']
+            },            
             {
               name: 'Syrian Chicken House',
               src: "Syrian Chicken House.png",
@@ -49,10 +55,7 @@ export default {
   },
   head(){
     return{
-      title: 'Hany | Projects',
-      script:[
-        {src: 'https://unpkg.com/typer-dot-js@0.1.0/typer.js', async: true}
-      ]
+      title: 'Hany | Projects'
     }
   }
 }

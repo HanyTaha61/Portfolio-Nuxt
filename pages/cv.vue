@@ -39,15 +39,11 @@ export default {
         }
 
         @media(max-width: 991px){
-        height: 1100px;
+        height: 1150px;
         }
 
         @media(max-width:767px) {
-        height: 900px;
-        }
-
-        @media(max-width: 600px){
-            height: 875px;
+        height: 916px;
         }
 
 

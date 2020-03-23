@@ -1,7 +1,7 @@
 <template>
     <div class="categories container-fluid" id="categories">
         <div class="container-fluid cats">
-            <b-navbar toggleable="lg" type="dark" id="navbar" class="navbar" fixed="top">
+            <b-navbar toggleable="lg" type="dark" id="navbar" fixed="top">
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
                 <b-collapse id="nav-collapse" is-nav>
                     <b-navbar-nav class="links">
@@ -35,7 +35,34 @@ export default {
         return{
             
         }
-    }
+    },
+    // methods:{
+    //     // increase navbar Opacity on scroll
+    //     //----------------------------------
+    //     navbar_opacity: function navbar_opacity(){
+    //     let nav_bar = document.getElementById('navbar')
+    //     window.addEventListener('scroll', function(){           
+    //         if(window.pageYOffset > 250){
+    //             if(window.innerWidth < 991){
+    //                 nav_bar.style.backgroundColor = 'rgba(1,1,1, 0.9)'
+    //             }else{
+    //                 nav_bar.style.backgroundColor = 'rgba(0,0,0,0.75)'
+    //             }
+    //         }
+    //         else{
+    //             if(window.innerWidth < 991){
+    //                 nav_bar.style.backgroundColor = 'rgba(1,1,1, 0.9)'
+    //             }else{
+    //                 nav_bar.style.backgroundColor = 'rgba(var(--secondary-hexa),0.5)'
+    //             }
+    //         }
+    //     })
+    //     }
+    //     // ----------------------------------------------          
+    // },
+    // mounted(){
+    //     // this.navbar_opacity()
+    // },    
 }
 </script>
 
