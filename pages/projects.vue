@@ -4,13 +4,14 @@
       <b-row class="row">
         <div class="col-md-12 project rounded" v-for="(project,index) in projects" :key="index">
           <h2 class="text-center my-3 mb-5 py-3 rounded text-light">
-            <a :href= project.url>{{(index)+1}}. {{project.name}}</a>
+            <a target="_blank" :href= project.url>{{(index)+1}}. {{project.name}}</a>
           </h2>
-          <ol class="list d-block px-2 display-4 mr-1 py-3 rounded mb-5"><p>Technologies Used:</p>
+          <ol class="list d-block px-2 display-4 mr-1 py-3 rounded mb-2"><p>Technologies Used:</p>
             <li class="tech mb-2 pb-2" v-for="(tech, i) in project.technology" :key="i">
               {{tech}}
             </li>
           </ol>
+          <h4 class="bg-dark mb-5 p-2">Publish Date: {{project.date}}</h4>
           <a :href= project.url target="_blank" class="mb-4">
             <img class="img-fluid" :src="require(`../assets/projects/${project.src}`)" :alt= project.name> 
           </a>
@@ -26,28 +27,39 @@ export default {
       return{
           projects:[
             {
+              name: 'Five for Health',
+              src: "54health.png",
+              url: 'https://five4health.netlify.app/',
+              technology: ['Vue.js'],
+              date: 'June 2020'
+            },            
+            {
               name: 'My Portfolio',
               src: "portfolio.png",
-              url: '/',
-              technology: ['Nuxt.js']
+              url: 'https://hany-portfolio.netlify.app/',
+              technology: ['Nuxt.js'],
+              date: 'Mar. 2020'
             },            
             {
               name: 'Syrian Chicken House',
               src: "Syrian Chicken House.png",
-              url: 'https://hany-taha.000webhostapp.com/',
-              technology: ['Vue.js', 'Vue-Router', 'Bootstrap-vue']
+              url: 'https://syrian-chicken-house.netlify.app/',
+              technology: ['Vue.js', 'Vue-Router', 'Bootstrap-vue'],
+              date: 'Nov. 2019'
             },
             {
               name: 'Cartoon Time',
               src: "cartoon-time.jpg",
               url: 'http://www.cartoontime.rf.gd',
-              technology:['Vue.js', 'Vuex', 'Vue-Router', 'Bootstrap-vue']
+              technology:['Vue.js', 'Vuex', 'Vue-Router', 'Bootstrap-vue'],
+              date: 'Nov. 2019'
               },
             {
               name: 'Dallas Business School',
               src: "dbs.jpg",
-              url: 'http://www.thepoint.epizy.com',
-              technology: ['Bootstrap 4', 'jQuery']
+              url: 'https://dallas-bussiness-school.netlify.app/',
+              technology: ['Bootstrap 4', 'jQuery'],
+              date: 'Mar. 2019'
             }
             
           ]
