@@ -30,14 +30,14 @@ export default {
               name: 'Five for Health',
               src: "54health.png",
               url: 'https://five4health.netlify.app/',
-              technology: ['Vue.js'],
+              technology: ['Nuxt.js', 'bootstrap-vue'],
               date: 'June 2020'
             },            
             {
               name: 'My Portfolio',
               src: "portfolio.png",
               url: 'https://hany-portfolio.netlify.app/',
-              technology: ['Nuxt.js'],
+              technology: ['Nuxt.js', 'bootstrap-vue'],
               date: 'Mar. 2020'
             },            
             {
