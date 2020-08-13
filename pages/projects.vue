@@ -6,15 +6,15 @@
           <h2 class="text-center my-3 mb-5 py-3 rounded text-light">
             <a target="_blank" :href= project.url>{{(index)+1}}. {{project.name}}</a>
           </h2>
+          <a :href= project.url target="_blank" class="mb-4">
+            <img class="img-fluid" :src="require(`../assets/projects/${project.src}`)" :alt= project.name> 
+          </a>
           <ol class="list d-block px-2 h2 mr-1 py-3 rounded mb-2"><p>Technologies Used:</p>
             <li class="tech mb-2 pb-2" v-for="(tech, i) in project.technology" :key="i">
               {{tech}}
             </li>
           </ol>
           <h4 class="bg-dark mb-5 p-2">Publish Date: {{project.date}}</h4>
-          <a :href= project.url target="_blank" class="mb-4">
-            <img class="img-fluid" :src="require(`../assets/projects/${project.src}`)" :alt= project.name> 
-          </a>
         </div>
       </b-row>
     </b-container>
