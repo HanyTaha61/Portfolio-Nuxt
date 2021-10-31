@@ -26,6 +26,14 @@ export default {
   data(){
       return{
           projects:[
+
+            {
+              name: 'Vuetify Project Manager',
+              src: "vuetify project manager.png",
+              url: 'https://serial-depot.netlify.app/',
+              technology: ['Vue.js', 'Vuetify'],
+              date: 'Oct. 2021'
+            },
             {
               name: 'Serial Depot',
               src: "serial depot.jpg",
