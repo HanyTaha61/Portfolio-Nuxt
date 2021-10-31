@@ -35,7 +35,7 @@ export default {
               date: 'Oct. 2021'
             },
             {
-              name: 'Serial Depot',
+              name: 'NOD32 Serial Depot',
               src: "serial depot.jpg",
               url: 'https://serial-depot.netlify.app/',
               technology: ['Nuxt.js', 'Vuetify'],
