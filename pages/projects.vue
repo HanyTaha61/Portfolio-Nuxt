@@ -30,7 +30,7 @@ export default {
             {
               name: 'Vuetify Project Manager',
               src: "vuetify project manager.png",
-              url: 'https://serial-depot.netlify.app/',
+              url: 'https://vuetify-project-manager.netlify.app/',
               technology: ['Vue.js', 'Vuetify'],
               date: 'Oct. 2021'
             },
